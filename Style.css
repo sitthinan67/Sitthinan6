@@ -9,7 +9,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/* พื้นหลังสลับดำ-ขาว */
 @keyframes blackWhite {
     0% {
         background: #000000;
@@ -40,7 +39,6 @@ header h1 {
 
 header p {
     margin-top: 8px;
-    opacity: 0.9;
 }
 
 section {
@@ -49,25 +47,20 @@ section {
     padding: 25px;
     border-radius: 15px;
     background: rgba(20, 20, 20, 0.85);
+    color: #ffffff;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.2);
-    box-shadow:
-        0 0 15px rgba(255,255,255,0.3),
-        0 0 30px rgba(255,255,255,0.15);
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
     animation: fadeUp 1s ease;
     transition: all 0.4s ease;
 }
 
 section:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow:
-        0 0 25px rgba(255,255,255,0.7),
-        0 0 50px rgba(255,255,255,0.4);
 }
 
 h2 {
     color: #ffffff;
-    text-shadow: 0 0 8px #ffffff;
 }
 
 .project {
@@ -78,43 +71,15 @@ h2 {
 
 .project h3 {
     margin: 0 0 10px;
-    color: #ffffff;
-    text-shadow: 0 0 5px #ffffff;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 6px;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 a:hover {
-    text-shadow: 0 0 10px #ffffff;
-}
-
-button {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: white;
-    color: black;
-    box-shadow: 0 0 20px white;
+    text-decoration: underline;
 }
 
 footer {
@@ -123,10 +88,8 @@ footer {
     background: rgba(0,0,0,0.85);
     color: white;
     border-top: 2px solid white;
-    box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
-/* Animation */
 @keyframes fadeUp {
     from {
         opacity: 0;
